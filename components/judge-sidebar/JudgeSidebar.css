@@ -1,0 +1,66 @@
+.judge-sidebar .sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.judge-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--Neutral-60);
+  padding: 4px 10px;
+  border-radius: 16px;
+  background-color: var(--Neutral-20);
+}
+
+.judge-status-indicator .icon {
+  font-size: 16px;
+  color: var(--Neutral-60);
+}
+
+.judge-status-indicator .icon.sync {
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.judge-status-indicator .icon.forwarded,
+.sidebar-entry .author-judge-ai .sidebar-source {
+  color: var(--judge-ai);
+}
+
+.judge-status-indicator .icon.error {
+  color: var(--accent-red);
+}
+
+.sidebar-entry .author-producer .sidebar-source {
+  color: var(--producer);
+}
+
+.last-forwarded-banner {
+  background-color: var(--Neutral-15);
+  border-top: 1px solid var(--Neutral-30);
+  padding: 8px 12px;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--accent-yellow);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.last-forwarded-banner .icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.last-forwarded-banner p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

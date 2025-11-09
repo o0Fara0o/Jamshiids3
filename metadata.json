@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Copy of  jamshiid s3",
+  "description": "به مکالمه بین دو هوش مصنوعی، جمشید و فروا، گوش دهید و هر زمان که خواستید وارد گفتگو شوید.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

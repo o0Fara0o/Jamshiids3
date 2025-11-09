@@ -1,0 +1,52 @@
+.fan-sidebar .sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fan-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--Neutral-60);
+  padding: 4px 10px;
+  border-radius: 16px;
+  background-color: var(--Neutral-20);
+}
+
+.fan-status-indicator .icon {
+  font-size: 16px;
+}
+
+.fan-status-indicator .icon.sync {
+  animation: spin 1.5s linear infinite;
+}
+
+.fan-sidebar {
+  /* Specific fan sidebar styles if any */
+}
+
+/* Author colors for fan personas */
+.sidebar-entry .author-fan-kian .sidebar-source {
+  color: var(--fan-kian);
+}
+.sidebar-entry .author-fan-sara .sidebar-source {
+  color: var(--fan-sara);
+}
+.sidebar-entry .author-fan-nima .sidebar-source {
+  color: var(--fan-nima);
+}
+.sidebar-entry .author-fan-parvaneh .sidebar-source {
+  color: var(--fan-parvaneh);
+}
+.sidebar-entry .author-fan-arash .sidebar-source {
+  color: var(--fan-arash);
+}
+
+.sidebar-entry .author-user .sidebar-source {
+  color: var(--accent-blue);
+}
+.sidebar-entry .author-system .sidebar-source {
+  color: var(--gray-500);
+}
